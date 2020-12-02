@@ -1,0 +1,57 @@
+
+
+## **TAMPÃO**
+
+Cáculo do pKa do Ácido
+
+import math
+Keq=1.4*10**(-4)
+pKa=-math.log10(Keq)
+print(pKa)
+
+
+Cálculo da concentração do Sal e do Ácido
+
+
+pH = pKa + log([sal]/[ácido])
+
+[sal]/[ácido] = exp( pH - pKa)
+
+#import math
+pH=7
+CsCa=math.exp(pH-pKa)
+print(CsCa)
+
+Equação 1: C3H6O3 + NaOH <=> NaC3H5O3 + H2O
+
+Equação 2: C3H6O3 + NaC3H5O3 <=> C3H6O3 + C3H5O3- + Na+
+
+TGlobal: 2C3H6O3 + NaOH <=> C3H6O3 + C3H5O3- + Na+ + H2O
+
+Ca=6/(CsCa) 
+Cs=6-Ca 
+print(Ca)
+print(Cs)
+vol=0.1
+Ma=90.08  
+Mb=40   
+macido=Ca*vol*Ma 
+mbase=2*macido  
+print(macido)
+print(mbase)
+
+Solução de NaOH 50% vol
+
+vsol=100 
+mb=50  
+volbase=(mbase*vsol)/mb 
+print(volbase)
+
+**Volume de NaOH a ser colocado, em ml:**
+
+print(volbase)
+
+**Massa de Ácido Lático a ser colocada, em g:**
+
+print(macido)
+
